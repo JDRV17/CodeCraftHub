@@ -1,0 +1,28 @@
+# CodeCraftHub 🚀
+
+CodeCraftHub is a lightweight, beginner-friendly RESTful API built with Python and Flask. It allows you to create, view, update, and delete courses to help track your learning progress. All data is persisted locally in a simple JSON file—no complex database configuration required!
+
+This project is designed as a learning tool for understanding REST API fundamentals, HTTP methods, JSON payloads, and basic server-side validation.
+
+---
+
+## ✨ Features
+
+- **Full CRUD Support:** Create, Read, Update, and Delete course entries.
+- **Data Persistence:** Automatically stores and reads course records from `courses.json`.
+- **Input Validation:** Enforces required fields, date formats (`YYYY-MM-DD`), and allowed status values.
+- **Robust Error Handling:** Returns standard HTTP status codes (`200`, `201`, `400`, `404`, `405`, `500`) with readable JSON error messages.
+- **Zero Database Setup:** Starts working right out of the box using standard Python libraries.
+
+---
+
+## 📁 Project Structure
+
+```text
+CodeCraftHub/
+│
+├── venv/                 # Isolated Python virtual environment (ignored by Git)
+├── app.py                # Main Flask application and REST API endpoints
+├── courses.json          # Local JSON file where course data is saved
+├── requirements.txt      # List of Python package dependencies (Flask)
+└── README.md             # Project documentation and guide
